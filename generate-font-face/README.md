@@ -8,15 +8,9 @@ Para baixar as fontes do [Google Fonts](https://fonts.google.com) por exemplo, s
 
 - Ao acessar o [Google Fonts](https://fonts.google.com), localize a fonte desejada na busca, e clique no ícone **+**.
 
-![1-opensans-add.png](https://bitbucket.org/repo/R9nageM/images/3143653494-1-opensans-add.png)
-
 - Ao adicionar a fonte, localize um painel que estará minimizado no rodapé da página. Clique sobre ele para maximizá-lo.
 
-![2-opensans-customize.png](https://bitbucket.org/repo/R9nageM/images/2634444051-2-opensans-customize.png)
-
 - Clique na aba **customize**, e selecione os pesos e estilos que deseja baixar. Clique sobre o ícone de download no canto superior direito do painel.
-
-![3-opensans-add-weights.png](https://bitbucket.org/repo/R9nageM/images/1171848341-3-opensans-add-weights.png)
 
 - Extraia o zip baixado, no diretório onde as fontes ficarão no projeto, lembrando de excluir os arquivos que não serão usados, como txts, htmls, etc. Mantenha apenas os arquivos que contem extensão de fontes (eot, svg, ttf, woff, woff2). 
 
