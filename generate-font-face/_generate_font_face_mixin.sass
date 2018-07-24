@@ -1,0 +1,15 @@
+@function contains($list, $var)
+    @return (null != index($list, $var))
+
+=generateFontFaces($path, $familyName, $filePrefix, $style, $weights)
+
+    $weightNames: (100: 'thin', 200: 'extralight', 300: 'light', 400: 'regular', 500: 'medium', 600: 'semibold', 700: 'bold', 800: 'extrabold', 900: 'black')
+
+    @each $weight, $name in $weightNames
+        @if contains($weights, $weight)
+            @font-face
+                font-family: $familyName
+                font-weight: $weight
+                font-style: if($style == '', normal, $style)
+                src: url('#{$path}/#{$filePrefix}-#{$name}#{$style}.eot') /* IE9 Compatibility Mode */
+                src: url('#{$path}/#{$filePrefix}-#{$name}#{$style}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('#{$path}/#{$filePrefix}-#{$name}#{$style}.woff2') format('woff2'), /* Super Modern Browsers */ url('#{$path}/#{$filePrefix}-#{$name}#{$style}.woff') format('woff'), /* Pretty Modern Browsers */ url('#{$path}/#{$filePrefix}-#{$name}#{$style}.ttf')    format('truetype'), /* Safari, Android, iOS */ url('#{$path}/#{$filePrefix}-#{$name}#{$style}.svg##{$familyName}') format('svg') /* Legacy iOS */
